@@ -307,6 +307,13 @@
             bindings = <&kp LS(HOME) &kp BSPC>;
             label = "DELETE_TO_ROW_START";
         };
+
+        select_row: select_row {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LS(DOWN)>;
+            label = "SELECT_ROW";
+        };
     };
 
     behaviors {
@@ -641,19 +648,19 @@
 
         navi_linux {
             bindings = <
-                &kp DEL     &kp LC(LS(TAB))  &kp TAB    &kp LC(TAB)  &tog 5     &kp INS               &p_HOME       &kp PG_DN  &kp PG_UP  &p_END
-                &kp LGUI    &kp LALT         &kp LCTRL  &kp LSHFT    &tog 9     &u_caps_word          &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT
-&td_bootloader  &undo_redo  &kp LC(X)        &kp LC(C)  &kp LC(V)    &tog 2     &kp C_AL_MY_COMPUTER  &kp LC(HOME)  &in_below  &in_above  &kp LC(END)  &delete_to_row_start
-                                             &kp ESC    &kp SPACE    &kp TAB    &kp RET               &kp BSPC      &kp DEL
+                &kp DEL     &kp LC(LS(TAB))  &kp TAB    &kp LC(TAB)  &tog 5     &kp INS       &p_HOME       &kp PG_DN  &kp PG_UP  &p_END
+                &kp LGUI    &kp LALT         &kp LCTRL  &kp LSHFT    &tog 9     &u_caps_word  &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT
+&td_bootloader  &undo_redo  &kp LC(X)        &kp LC(C)  &kp LC(V)    &tog 2     &select_row   &kp LC(HOME)  &in_below  &in_above  &kp LC(END)  &delete_to_row_start
+                                             &kp ESC    &kp SPACE    &kp TAB    &kp RET       &kp BSPC      &kp DEL
             >;
         };
 
         navi_ru_linux {
             bindings = <
-                &kp DEL     &kp LC(LS(TAB))    &kp TAB            &kp LC(TAB)        &tog 6             &kp INS                       &p_HOME               &kp_unshift PG_DN  &kp_unshift PG_UP  &p_END
-                &kp LGUI    &kp LALT           &kp LCTRL          &kp LSHFT          &tog 10            &u_caps_word_ru               &left_ignore_cw       &down_ignore_cw    &up_ignore_cw      &right_ignore_cw
-&td_bootloader  &undo_redo  &kp_unshift LC(X)  &kp_unshift LC(C)  &kp_unshift LC(V)  &tog 2             &kp_unshift C_AL_MY_COMPUTER  &kp_unshift LC(HOME)  &in_below          &in_above          &kp_unshift LC(END)  &delete_to_row_start
-                                               &kp_unshift ESC    &kp_unshift SPACE  &kp_unshift TAB    &kp_unshift RET               &kp BSPC              &kp DEL
+                &kp DEL     &kp LC(LS(TAB))    &kp TAB            &kp LC(TAB)        &tog 6             &kp INS          &p_HOME               &kp_unshift PG_DN  &kp_unshift PG_UP  &p_END
+                &kp LGUI    &kp LALT           &kp LCTRL          &kp LSHFT          &tog 10            &u_caps_word_ru  &left_ignore_cw       &down_ignore_cw    &up_ignore_cw      &right_ignore_cw
+&td_bootloader  &undo_redo  &kp_unshift LC(X)  &kp_unshift LC(C)  &kp_unshift LC(V)  &tog 2             &select_row      &kp_unshift LC(HOME)  &in_below          &in_above          &kp_unshift LC(END)  &delete_to_row_start
+                                               &kp_unshift ESC    &kp_unshift SPACE  &kp_unshift TAB    &kp_unshift RET  &kp BSPC              &kp DEL
             >;
         };
 
