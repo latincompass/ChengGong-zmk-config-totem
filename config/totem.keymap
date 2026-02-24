@@ -661,9 +661,9 @@
 
         media_linux {
             bindings = <
-                &kp DEL     &kp LC(RS(TAB))  &kp TAB          &kp LC(TAB)        &tog 8             &none       &out OUT_BLE  &out OUT_USB  &none         &none
-                &kp LGUI    &kp LALT         &kp LCTRL        &kp LSHFT          &tog 13            &u_out_tog  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-&td_bootloader  &undo_redo  &kp LC(X)        &kp LC(C)        &kp LC(V)          &tog 2             &bt_4       &bt_0         &bt_1         &bt_2         &bt_3       &u_ep_tog
+                &kp DEL     &kp LC(RS(TAB))  &kp TAB          &kp LC(TAB)        &tog 8             &none       &out OUT_BLE  &out OUT_USB  &kp C_AL_MY_COMPUTER  &kp C_AL_CALC
+                &kp LGUI    &kp LALT         &kp LCTRL        &kp LSHFT          &tog 13            &u_out_tog  &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP          &kp C_NEXT
+&td_bootloader  &undo_redo  &kp LC(X)        &kp LC(C)        &kp LC(V)          &tog 2             &bt_4       &bt_0         &bt_1         &bt_2                 &bt_3          &u_ep_tog
                                              &kp_unshift ESC  &kp_unshift SPACE  &kp_unshift TAB    &kp C_STOP  &kp C_PP      &kp K_MUTE
             >;
         };
