@@ -720,10 +720,10 @@
 
         fun_linux {
             bindings = <
-       &kp F12  &kp F7  &kp F8     &kp F9             &kp PSCRN          &tog 13            &kp LC(LS(TAB))  &kp TAB    &kp LC(TAB)  &kp DEL
-       &kp F11  &kp F4  &kp F5     &kp F6             &kp SCROLLLOCK     &tog 8             &kp LSHFT        &kp LCTRL  &kp LALT     &kp LGUI
-&none  &kp F10  &kp F1  &kp F2     &kp F3             &kp PAUSE_BREAK    &tog 2             &kp LC(V)        &kp LC(C)  &kp LC(X)    &undo_redo  &td_bootloader
-                        &kp K_APP  &kp_unshift SPACE  &kp_unshift TAB    &kp_unshift ENTER  &kp BSPC         &kp DEL
+         &kp F12  &kp F7  &kp F8     &kp F9             &kp PSCRN          &tog 13            &kp LC(LS(TAB))  &kp TAB    &kp LC(TAB)  &kp DEL
+         &kp F11  &kp F4  &kp F5     &kp F6             &kp SCROLLLOCK     &tog 8             &kp LSHFT        &kp LCTRL  &kp LALT     &kp LGUI
+&kp F13  &kp F10  &kp F1  &kp F2     &kp F3             &kp PAUSE_BREAK    &tog 2             &kp LC(V)        &kp LC(C)  &kp LC(X)    &undo_redo  &td_bootloader
+                          &kp K_APP  &kp_unshift SPACE  &kp_unshift TAB    &kp_unshift ENTER  &kp BSPC         &kp DEL
             >;
         };
     };
